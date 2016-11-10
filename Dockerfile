@@ -33,9 +33,6 @@ RUN yum install kernel-headers kernel-devel -y --nogpgcheck
 RUN yum groupinstall "Development Tools" -y --nogpgcheck
 RUN yum install which openssl openssl-libs -y --nogpgcheck
 
-RUN cpan Module::Build
-RUN cpan Nagios::Config
-
 
 
 
