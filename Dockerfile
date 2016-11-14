@@ -8,7 +8,7 @@ RUN yum -y update; yum clean all
 
 
 RUN yum update -y --nogpgcheck 
-RUN yum install perl perl-CPAN perl-CGI perl-Digest-MD5 rrdtool perl-rrdtool perl-GD perl-Time-HiRes -y --nogpgcheck 
+RUN yum install perl perl-CGI perl-Digest-MD5 rrdtool perl-rrdtool perl-GD perl-Time-HiRes cpanminus -y --nogpgcheck 
 
 RUN yum install gcc glibc glibc-common gd gd-devel net-snmp net-snmp-utils openssl-devel wget unzip -y --nogpgcheck 
 RUN yum install httpd php php-cli php-gd rrdtool-php -y --nogpgcheck
