@@ -15,7 +15,7 @@ RUN yum install httpd php php-cli php-gd rrdtool-php -y --nogpgcheck
 
 RUN yum install kernel-headers kernel-devel -y --nogpgcheck
 RUN yum groupinstall "Development Tools" -y --nogpgcheck
-RUN yum install which openssl openssl-libs -y --nogpgcheck
+RUN yum install mailx which openssl openssl-libs -y --nogpgcheck
 
 
 RUN yum clean all
