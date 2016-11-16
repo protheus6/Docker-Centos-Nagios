@@ -15,7 +15,7 @@ RUN yum install httpd php php-cli php-gd rrdtool-php php-pear php-mysql -y --nog
 
 RUN yum install kernel-headers kernel-devel -y --nogpgcheck
 RUN yum groupinstall "Development Tools" -y --nogpgcheck
-RUN yum install mailx which openssl openssl-libs nmap -y --nogpgcheck
+RUN yum install mailx which openssl openssl-libs nmap sudo -y --nogpgcheck
 
 RUN yum install mariadb mariadb-server -y --nogpgcheck
 
