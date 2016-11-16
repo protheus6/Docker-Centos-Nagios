@@ -22,7 +22,7 @@ RUN yum install mariadb mariadb-server -y --nogpgcheck
 RUN yum clean all
 
 
-systemctl enable mariadb
+RUN systemctl enable mariadb
 
 
 VOLUME [ "/sys/fs/cgroup" ]
