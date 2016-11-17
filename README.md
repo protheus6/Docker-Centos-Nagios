@@ -7,6 +7,7 @@ this is a pre-configured Centos to Install Nagios, does not contain install of n
         - Apache, PHP
         - MariaDB
         - GD, RRDTool, SNMP, OpenSSL
+        - sudo nmap
         
     
 
